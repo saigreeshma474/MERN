@@ -1,0 +1,406 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #7c3aed;
+}
+
+.brand h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.savedBadge {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* HERO */
+.hero {
+  width: 100%;
+  padding: 22px;
+}
+
+.heroBox {
+  width: 100%;
+  max-width: 700px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.35), rgba(147, 51, 234, 0.35));
+  padding: 28px;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0px 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+.heroBox h1 {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+.heroBox p {
+  opacity: 0.85;
+  margin-bottom: 18px;
+}
+
+/* CONTROLS */
+.controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.controls input,
+.controls select {
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.controls input {
+  flex: 1;
+  min-width: 240px;
+}
+
+.controls select {
+  background: white;
+  cursor: pointer;
+}
+
+/* MAIN FULL SCREEN GRID */
+.layout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2.3fr 1fr;
+  gap: 18px;
+  padding: 22px;
+}
+
+/* LEFT SIDE */
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.count {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 18px;
+  border-radius: 18px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.card h4 {
+  font-size: 18px;
+}
+
+.company {
+  opacity: 0.85;
+  margin-top: 4px;
+}
+
+.posted {
+  opacity: 0.7;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+/* SAVE BUTTON */
+.saveBtn {
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.saveBtn.active {
+  background: #facc15;
+}
+
+/* META */
+.meta,
+.meta2 {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  opacity: 0.9;
+}
+
+/* TAGS */
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.tag {
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 13px;
+}
+
+/* BUTTONS */
+.btnRow {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.btn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 14px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+}
+
+.btn.ghost {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+.btn.full {
+  width: 100%;
+  margin-top: 16px;
+}
+
+/* RIGHT SIDE */
+.rightSide {
+  width: 100%;
+  height: fit-content;
+  position: sticky;
+  top: 85px;
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sideTitle {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.sideEmpty {
+  opacity: 0.75;
+}
+
+.sideCard {
+  padding: 12px;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sideCard h4 {
+  margin-bottom: 4px;
+}
+
+.sideCard p {
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+/* EMPTY */
+.empty {
+  padding: 30px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* MODAL */
+.modalBg {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal {
+  width: 100%;
+  max-width: 520px;
+  background: #0b1227;
+  padding: 22px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.modalCompany {
+  opacity: 0.8;
+  margin-top: 6px;
+}
+
+.modalDesc {
+  margin-top: 12px;
+  opacity: 0.9;
+}
+
+.modalMeta {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  opacity: 0.85;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .rightSide {
+    position: relative;
+    top: 0;
+  }
+
+  .heroBox {
+    max-width: 100%;
+  }
+
+  .heroBox h1 {
+    font-size: 34px;
+  }
+}
+/* NAV LINKS */
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.linkBtn {
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: bold;
+}
+
+.primaryLink {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+}
+
+/* AUTH PAGES */
+.authPage {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+}
+.authBox {
+  width: 100%;
+  max-width: 420px;
+  padding: 22px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0px 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+.authBox h2 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.authSub {
+  opacity: 0.8;
+  margin-bottom: 18px;
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.authForm input {
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.authBottom {
+  margin-top: 14px;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.authBottom a {
+  color: #7c3aed;
+  font-weight: bold;
+}
+
+.backHome {
+  display: block;
+  margin-top: 16px;
+  text-align: center;
+  opacity: 0.85;
+}
